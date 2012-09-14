@@ -34,37 +34,41 @@ platforms :mri, :mingw do
     gem "pg", ">= 0.11.0"
   end
 
-  group :sqlite do
-    gem "sqlite3"
-  end
+#  group :sqlite do
+#    gem "sqlite3"
+#  end
 end
 
 platforms :mri_18, :mingw_18 do
-  group :mysql do
-    gem "mysql"
-  end
+#  group :mysql do
+#    gem "mysql"
+#  end
 end
 
 platforms :mri_19, :mingw_19 do
-  group :mysql do
-    gem "mysql2", "~> 0.3.11"
-  end
+#  group :mysql do
+#    gem "mysql2", "~> 0.3.11"
+#  end
 end
 
 platforms :jruby do
   gem "jruby-openssl"
 
-  group :mysql do
-    gem "activerecord-jdbcmysql-adapter"
-  end
+#  group :mysql do
+#    gem "activerecord-jdbcmysql-adapter"
+#  end
 
   group :postgresql do
     gem "activerecord-jdbcpostgresql-adapter"
   end
 
-  group :sqlite do
-    gem "activerecord-jdbcsqlite3-adapter"
-  end
+#  group :sqlite do
+#    gem "activerecord-jdbcsqlite3-adapter"
+#  end
+end
+
+group :development, :test do
+  gem "mysql2", "~> 0.3.11"
 end
 
 group :development do
