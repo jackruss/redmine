@@ -1,3 +1,6 @@
 [submodule "plugins/redmine_digest"]
 	path = plugins/redmine_digest
 	url = https://github.com/pklingem/redmine_digest.git
+[submodule "plugins/redmine_s3"]
+	path = plugins/redmine_s3
+	url = git://github.com/ka8725/redmine_s3.git
