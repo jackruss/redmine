@@ -59,10 +59,10 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.3.6)
     multi_xml (0.5.1)
+    mysql (2.8.1)
     mysql2 (0.3.11)
     net-ldap (0.3.1)
     nokogiri (1.5.5)
-    pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -113,7 +113,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-jdbcmysql-adapter
   activerecord-jdbcpostgresql-adapter
+  activerecord-jdbcsqlite3-adapter
   aws-sdk
   builder (= 3.0.0)
   coderay (~> 1.0.6)
@@ -122,9 +124,9 @@ DEPENDENCIES
   jquery-rails (~> 2.0.2)
   jruby-openssl
   mocha (= 0.12.3)
+  mysql
   mysql2 (~> 0.3.11)
   net-ldap (~> 0.3.1)
-  pg (>= 0.11.0)
   rack-openid
   rails (= 3.2.8)
   rdoc (>= 2.4.2)
