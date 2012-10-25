@@ -7,3 +7,6 @@
 [submodule "public/themes/pepper"]
 	path = public/themes/pepper
 	url = https://github.com/koppen/redmine-pepper-theme.git
+[submodule "plugins/redmine_redcarpet_formatter"]
+	path = plugins/redmine_redcarpet_formatter
+	url = https://github.com/alminium/redmine_redcarpet_formatter.git
